@@ -1,4 +1,4 @@
-@subdominio = render-codespace
+@subdominio = render-codespace-ec2
 
 ##############################
 # Requests SIN base de datos #
