@@ -7,15 +7,15 @@ import jakarta.persistence.Id;
  import jakarta.persistence.Table;
 
 @Entity // This tells Hibernate to make a table out of this class
-@Table(name = "usuario")
-public class User {
+@Table(name = "curso")
+public class Curso {
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Integer id;
 
 	private String name;
 
-	private String email;
+	private Integer creditos;
 
 	public Integer getId() {
 		return id;
@@ -33,11 +33,11 @@ public class User {
 		this.name = name;
 	}
 
-	public String getEmail() {
-		return email;
+	public Integer getCreditos() {
+		return creditos;
 	}
 
-	public void setEmail(String email) {
-		this.email = email;
+	public void setCreditos(Integer creditos) {
+		this.creditos = creditos;
 	}
 }
