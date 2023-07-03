@@ -1,0 +1,9 @@
+GET https://render-codespace.onrender.com/
+###
+GET https://render-codespace.onrender.com/demo/all
+###
+POST https://render-codespace.onrender.com/demo/add
+Content-Type: application/x-www-form-urlencoded
+
+name=Pedro&email=Pedro@gmail.com
+
