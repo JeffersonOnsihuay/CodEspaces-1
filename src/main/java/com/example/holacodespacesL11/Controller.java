@@ -14,7 +14,7 @@ public class Controller{
         return "Sm75695765-Jefferson Onsihuay";
     }
 
-    @GetMapping(path="/codigo")
+    @GetMapping(path="/idat/codigo")
     public String Cod(){
         return "Sm75695765";
     }

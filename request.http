@@ -1,4 +1,4 @@
-@subdominio = render-codespace-ec2
+@subdominio = sub-dominio-render
 
 ##############################
 # Requests SIN base de datos #
@@ -10,7 +10,7 @@ GET https://{{subdominio}}.onrender.com/
 
 ###
 # 2: Mostrar su código IDAT
-GET https://{{subdominio}}.onrender.com/codigo
+GET https://{{subdominio}}.onrender.com/idat/codigo
 
 ###
 # 3: Mostrar su nombre completo
@@ -46,4 +46,3 @@ DELETE https://{{subdominio}}.onrender.com/api/curso/eliminar HTTP/1.1
 Content-Type: application/x-www-form-urlencoded
 
 id=1
-
