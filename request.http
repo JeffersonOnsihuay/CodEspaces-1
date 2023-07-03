@@ -10,7 +10,7 @@ GET https://{{subdominio}}.onrender.com/
 
 ###
 # 2: Mostrar su código IDAT
-GET https://{{subdominio}}.onrender.com/idat/codigo
+GET https://{{subdominio}}.onrender.com/codigo
 
 ###
 # 3: Mostrar su nombre completo
