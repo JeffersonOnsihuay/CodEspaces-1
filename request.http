@@ -1,9 +1,48 @@
-GET https://render-codespace.onrender.com/
+@subdominio = render-codespace
+
+##############################
+# Requests SIN base de datos #
+##############################
+
 ###
-GET https://render-codespace.onrender.com/demo/all
+# 1: Mostrar su código IDAT y su nombre en el siguiente formato: CÓDIGO - NOMBRE
+GET https://{{subdominio}}.onrender.com/
+
 ###
-POST https://render-codespace.onrender.com/demo/add
+# 2: Mostrar su código IDAT
+GET https://{{subdominio}}.onrender.com/idat/codigo
+
+###
+# 3: Mostrar su nombre completo
+GET https://{{subdominio}}.onrender.com/idat/nombre-completo
+
+
+
+##############################################
+#         Requests CON base de datos         #
+##############################################
+# Tabla: cursos:                             #
+#   - id: int (strategy=GenerationType.AUTO) #
+#   - nombre: string                         #
+#   - creditos: int                          #
+##############################################
+
+
+###
+# 4: Listar cursos
+GET https://{{subdominio}}.onrender.com/api/curso/listar HTTP/1.1
+
+###
+# 5: Nuevo Curso
+POST https://{{subdominio}}.onrender.com/api/curso/nuevo HTTP/1.1
 Content-Type: application/x-www-form-urlencoded
 
-name=Pedro&email=Pedro@gmail.com
+nombre=DSW1
+&creditos=2
 
+###
+# 6: Eliminar Curso
+DELETE https://{{subdominio}}.onrender.com/api/curso/eliminar HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+
+id=1
