@@ -10,7 +10,7 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.CascadeType;
 
 @Entity // This tells Hibernate to make a table out of this class
-@Table(name = "curso")
+@Table(name = "cursos")
 public class Curso {
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)

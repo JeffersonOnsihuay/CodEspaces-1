@@ -1,4 +1,4 @@
-@server = https://jeffersononsihuay-fantastic-computing-wwvjqwgxqgw35jw-8080.preview.app.github.dev/
+@server = https://texai-sturdy-adventure-xv9jj494hq47-8080.preview.app.github.dev
 ###
 GET {{server}}
 ###
@@ -34,11 +34,7 @@ GET {{server}}/profile/cursos
 ###
 GET {{server}}/cursos/search/findByNombre?nombre=Inteligencia+Artificial+1
 
-
-
 ############ Carrera
-
-
 GET {{server}}/carreras
 ###
 POST {{server}}/carreras
