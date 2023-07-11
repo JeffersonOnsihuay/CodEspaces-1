@@ -9,44 +9,55 @@ import jakarta.persistence.ManyToOne;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.CascadeType;
 
-@Entity // This tells Hibernate to make a table out of this class
-@Table(name = "cursos")
+@Entity
+@Table(name = "curso")
 public class Curso {
-	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
-	private Integer id;
 
-	private String nombre;
+    @Id
+    @GeneratedValue(strategy=GenerationType.AUTO)
+    private Integer id;
 
-	private Integer creditos;
+    private String nombre;
 
-	@ManyToOne(cascade = CascadeType.ALL)
+    private Integer creditos;
+
+    @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "id_carrera")
-    private Carreras carrera;
+    private Carrera carrera;
 
+    public Integer getId() {
+        return id;
+    }
 
-	public Integer getId() {
-		return id;
-	}
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
-	public void setId(Integer id) {
-		this.id = id;
-	}
+    public String getNombre() {
+        return nombre;
+    }
 
-	public String getNombre() {
-		return nombre;
-	}
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
 
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
-	}
+    public Integer getCreditos() {
+        return creditos;
+    }
 
-	public Integer getCreditos() {
-		return creditos;
-	}
+    public void setCreditos(Integer creditos) {
+        this.creditos = creditos;
+    }
 
-	public void setCreditos(Integer creditos) {
-		this.creditos = creditos;
-	}
-	
+    public Carrera getCarrera() {
+        return carrera;
+    }
+
+    public void setCarrera(Carrera carrera) {
+        this.carrera = carrera;
+    }
+
+        
+    
+    
 }

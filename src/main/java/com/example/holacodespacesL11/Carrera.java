@@ -13,7 +13,8 @@ import java.util.HashSet;
 
 @Entity
 @Table(name = "carrera")
-public class Carreras {
+public class Carrera {
+
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
     private Integer id;
@@ -47,8 +48,6 @@ public class Carreras {
     public void setCursos(Set<Curso> cursos) {
         this.cursos = cursos;
     }
+    
+    
 }
-
-
-
-

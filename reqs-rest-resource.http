@@ -1,4 +1,4 @@
-@server = https://texai-sturdy-adventure-xv9jj494hq47-8080.preview.app.github.dev
+@server = https://jeffersononsihuay-fantastic-computing-wwvjqwgxqgw35jw-8080.preview.app.github.dev/
 ###
 GET {{server}}
 ###
