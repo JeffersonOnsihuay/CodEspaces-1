@@ -1,4 +1,4 @@
-@server = https://jeffersononsihuay-fantastic-computing-wwvjqwgxqgw35jw-8080.preview.app.github.dev/
+@server = https://jeffersononsihuay-fantastic-computing-wwvjqwgxqgw35jw-8080.preview.app.github.dev
 ###
 GET {{server}}
 ###
@@ -21,9 +21,9 @@ Content-Type: application/json
 
 {"nombre": "Compiladores", "creditos": 5}
 ###
-DELETE {{server}}/cursos/102
+DELETE {{server}}/cursos/152
 ###
-PATCH {{server}}/cursos/55
+PATCH {{server}}/cursos/52
 Content-Type: application/json
 
 {"creditos": 5}
@@ -33,6 +33,8 @@ GET {{server}}/profile/cursos
 
 ###
 GET {{server}}/cursos/search/findByNombre?nombre=Inteligencia+Artificial+1
+
+
 
 ############ Carrera
 GET {{server}}/carreras
